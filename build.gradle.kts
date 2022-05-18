@@ -9,6 +9,11 @@ repositories {
     mavenCentral()
 }
 
+tasks.test {
+    useJUnitPlatform()
+}
+
 dependencies {
     implementation(kotlin("stdlib"))
+    testImplementation(kotlin("test"))
 }

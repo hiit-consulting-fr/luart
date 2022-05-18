@@ -14,9 +14,11 @@ end
 
 local rootLevelLocalVar = true
 
-function function_b()
-    local test = 1
+function function_b() --comment
+    local test = 1 --[[multi line
 
+               comment
+    --]]
     local rootLevelLocalVar
     rootLevelLocalVar = false
     overrideC = rootLevelLocalVar == false
